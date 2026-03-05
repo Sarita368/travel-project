@@ -8,6 +8,16 @@ body {
     margin: 0 auto;
 }
 
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+}
+
+section {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('../styles/images/ponte-25.png');
     background-size: cover;
@@ -54,7 +64,46 @@ header a {
     display: inline-block;
 }
 
-@media (max-width: 768px) {
+footer {
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url('../styles/images/lisbon-footer.png');
+    padding: 100px 0;
+
+}
+
+footer h3 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+}
+
+footer p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    opacity: 0.7;
+    margin-right: 20px;
+}
+
+footer ul {
+    padding: 0;
+}
+
+footer li {
+    list-style: none;
+    margin: 0;
+    padding: o;
+}
+
+footer a {
+    color: white;
+    opacity: 0.7;
+}
+
+@media (max-width: 960px) {
     header h1 {
         padding: 60px 0;
         font-size: 48px;
