@@ -7,16 +7,27 @@ body {
     max-width: 1400px;
     margin: 0 auto;
 }
+.main-image {
+    max-width: 100%;
+}
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
     grid-gap: 64px
+}
+
+.grid-2-columns {
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-3-columns {
+    grid-template-columns: 1fr 2fr 1fr;
 }
 
 section {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 100px 0;
 }
 
 header {
@@ -65,12 +76,35 @@ header a {
     display: inline-block;
 }
 
+main {
+    background-color: white;
+}
+
+main h2 {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 5px;
+    color: #272044;
+    opacity: 0.3;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+main h3 {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1.5;
+    color: #272044;
+    margin: 0;
+}
+
 footer {
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url('../styles/images/lisbon-footer.png');
-    padding: 100px 0;
+
 
 }
 
@@ -104,10 +138,11 @@ footer a {
 }
 
 @media (max-width: 960px) {
-    header h1 {
+    header{
         padding: 60px 0;
+    }
+    header h1 {
         font-size: 48px;
-        line-height: 72px;
     }
 
     header h2 {
@@ -116,5 +151,12 @@ footer a {
 
     header h3 {
         font-size: 12px;
+    }
+    .grid {
+        grid-template-columns: 1fr;
+        grid-gap: 32px;
+    }
+    section {
+        padding: 30px;
     }
 }
