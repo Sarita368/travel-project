@@ -38,7 +38,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     padding: 0 100px;
-    align-items: center;
+    align-items: start;
 }
 
 .card-grid-3-columns {
@@ -259,6 +259,11 @@ footer a {
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 32px;
+    }
+    .grid-2-columns, .grid-3-columns, .card-grid-3-columns, .card-header {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+        grid-gap: 20px;
     }
 
     section {
