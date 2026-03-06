@@ -3,17 +3,23 @@ body {
     background-color: #272044;
 }
 
+.img-responsive {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 25px;
+    display: block;
+    margin-top: 30px;
+}
+
 .background {
     max-width: 1400px;
     margin: 0 auto;
 }
-.main-image {
-    max-width: 100%;
-}
 
 .grid {
     display: grid;
-    grid-gap: 64px
+    grid-gap: 80px
 }
 
 .grid-2-columns {
@@ -21,13 +27,57 @@ body {
 }
 
 .grid-3-columns {
-    grid-template-columns: 1fr 2fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+    padding: 0 100px;
+}
+
+.card-grid-3-columns {
+    grid-template-columns: 1fr 1fr 1fr;
+    display: grid;
+    grid-gap: 30px;
+}
+
+.card {
+    background-color: white;
+    margin: 30px 0;
+}
+
+.card-body {
+    padding: 30px;
+}
+
+.card-footer {
+    padding: 0 30px 30px;
+
+}
+
+
+.grid-btn {
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    padding: 16px;
+    background-color: #272044;
+    text-decoration: none;
+
 }
 
 section {
     max-width: 1200px;
     margin: 0 auto;
     padding: 100px 0;
+}
+
+section.secondary {
+    background: #f8f8f8;
+    padding: 100px 60px;
 }
 
 header {
@@ -76,6 +126,16 @@ header a {
     display: inline-block;
 }
 
+.text-center {
+    text-align: center;
+}
+
+.main-image {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
 main {
     background-color: white;
 }
@@ -99,27 +159,43 @@ main h3 {
     margin: 0;
 }
 
+main h4 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+
+}
+
+main h5 {
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 1;
+    color: #272044;
+    margin: 0;
+
+}
+
 footer {
     color: white;
     background-repeat: no-repeat;
     background-size: cover;
     background: linear-gradient(rgba(39, 32, 68, 0.9), rgba(39, 32, 68, 0.9)), url('../styles/images/lisbon-footer.png');
-
-
 }
 
 footer h3 {
     font-weight: 700;
     font-size: 20px;
     line-height: 1.5;
-    margin: 0;
+    margin-bottom: 20px;
 }
 
 footer p {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 footer ul {
@@ -129,7 +205,7 @@ footer ul {
 footer li {
     list-style: none;
     margin: 0;
-    padding: o;
+    padding: 0;
 }
 
 footer a {
@@ -138,9 +214,10 @@ footer a {
 }
 
 @media (max-width: 960px) {
-    header{
+    header {
         padding: 60px 0;
     }
+
     header h1 {
         font-size: 48px;
     }
@@ -152,10 +229,12 @@ footer a {
     header h3 {
         font-size: 12px;
     }
+
     .grid {
         grid-template-columns: 1fr;
         grid-gap: 32px;
     }
+
     section {
         padding: 30px;
     }
